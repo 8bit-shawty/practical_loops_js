@@ -1,11 +1,13 @@
-for(i = 1; i <= 100; i++){
-    if(i % 3 ===0 && i % 5 === 0){
-        console.log(i, " FIZZ BUZZ")
-    }else if(i % 3 === 0){
-        console.log(i, " FIZZ")
-    } else if(i % 5 === 0){
-        console.log(i, " BUZZ")
-    }else{
-        console.log(i)
+for(let n=1; n < 100; n++ ){
+    let isPrime = true;
+
+    for(let m = 2; m < n; m++){
+        if(n % m === 0){
+            isPrime = false;
+            break;
+        }
+    }
+    if(isPrime === true){
+        console.log(n + ' is a prime number')
     }
 }
