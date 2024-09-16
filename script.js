@@ -17,6 +17,9 @@ for(i = 1; i <= 100; i++){
     }
 }
 //PART 2
+// Declare an arbitrary number, n.
+// Create a loop that searches for the next prime number, starting at n and incrementing from there.
+// As soon as you find the prime number, log that number and exit the loop.
 
 for(let n=1; n < 100; n++ ){
     let isPrime = true;
@@ -29,5 +32,23 @@ for(let n=1; n < 100; n++ ){
     }
     if(isPrime === true){
         console.log(n + ' is a prime number')
+    }
+}
+
+let cell = "";
+
+let cell1 = "";
+let cell2 = "";
+let cell3 = "";
+let cell4 = "";
+let cellCounter = 0;
+
+let string = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
+
+for (i = 0; i < string.length - 1; i++){
+    // console.log(string.concat[i])
+    // if(string.charAt(i) === ',')
+    if(string[i] === ','){
+        if(cellCounter === 0)
     }
 }
